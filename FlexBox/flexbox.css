@@ -1,23 +1,53 @@
 #container
 {
-    background-color: aquamarine;
-    width: 100%;
+    background-color: grey;
+    width: 90%;
     height: 500px;
+    margin: 0 auto ;
     display: flex;
+    border: 5px solid black;
     flex-direction:row;
     justify-content: center;
-    
+    align-items : flex-start;
 
     
-
-
-   
+    
+    
 
 }
 
 #container div{
   
-    width: 200px;
+    width: 500px;
     height: 200px;
+    font-size: 50px;
+    text-align: center;
+   /* flex-basis: 250px;  /*important*/
+   
     
+    
+}
+
+div:nth-of-type(1){
+
+    flex-shrink: 1;  /*important*/
+     /*flex-grow: 1;*/  /*important*/
+
+}
+div:nth-of-type(5){
+
+    flex-shrink: 2;   /*important*/
+    /*flex-grow: 1;*/  /*important*/
+    
+}
+
+
+@media (max-width:300px)
+{
+    div:nth-of-type(5){
+
+        flex-shrink: 2;   /*important*/
+        /*flex-grow: 1;*/  /*important*/
+        
+    }
 }
