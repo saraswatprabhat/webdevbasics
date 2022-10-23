@@ -1,0 +1,13 @@
+body {
+    background-color: #60a9ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vm;
+}
+.panel {
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px 25px;
+    width: 50%;
+}
